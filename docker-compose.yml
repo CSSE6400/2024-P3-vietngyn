@@ -1,6 +1,7 @@
-version: "3.9" 
-services: 
-  database: 
+ version: "3.9" 
+
+ services: 
+   database: 
     image: postgres:latest 
     restart: always 
     environment: 
@@ -9,7 +10,7 @@ services:
       POSTGRES_DB: todo 
     volumes: 
       - ./data/db:/var/lib/postgresql/data 
-  app: 
+   app: 
     build: . 
     restart: always 
     environment: 
