@@ -93,7 +93,7 @@ def update_todo(todo_id):
     todo.deadline_at = request.json.get('deadline_at', todo.deadline_at) 
     db.session.commit() 
     
-    return jsonify(todo.to_dict()), 200
+    return jsonify(todo.to_dict())
 
 @api.route('/todos/<int:todo_id>', methods=['DELETE'])
 def delete_todo(todo_id):
