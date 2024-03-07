@@ -9,5 +9,3 @@ Update this README file with appropriate information about your project,
 including how to run it.
 
 There are [resources](https://www.makeareadme.com) available to help you write a good README file.
-
-
